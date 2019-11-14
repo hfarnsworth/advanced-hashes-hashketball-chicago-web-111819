@@ -189,8 +189,9 @@ def most_points_scored
 end
 
 def winning_team
-  home_total = game_hash[:home][:players].inject { |i,n| n +
-    i[:points] }
+  home_total = 0
+  away_total = 0
+  game_hash[:home][:players].each { |i|  home_total += i[:points] }
     
     
 end
