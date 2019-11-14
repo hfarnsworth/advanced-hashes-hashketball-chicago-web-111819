@@ -164,9 +164,10 @@ def player_stats(name)
   
   game_hash[:away][:players].each { |i|
     if i[:player_name] == name
-      return i
+      stats = i
     else
     end
+    }
   
   
 end
