@@ -157,14 +157,14 @@ def player_stats(name)
   stats = Hash.new
   game_hash[:home][:players].each { |i|
     if i[:player_name] == name 
-      return i
+      stats = i
     else
     end
     }
   
   game_hash[:away][:players].each { |i|
     if i[:player_name] == name
-      return i[stat_sym]
+      return i
     else
     end
   
