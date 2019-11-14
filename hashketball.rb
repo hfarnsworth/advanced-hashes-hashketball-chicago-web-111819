@@ -191,7 +191,7 @@ end
 def winning_team
   home_total = 0
   away_total = 0
-  ame_hash[:home][:players].each { |i|  home_total += i[:points] }
+  game_hash[:home][:players].each { |i|  home_total += i[:points] }
   
   game_hash[:away][:players].each { |i|  away_total += i[:points] }
     
