@@ -205,3 +205,7 @@ def winning_team
     
 end
 
+def player_with_longest_name
+  player = all_players.max_by { |i| i[:points] }
+  player[:player_name]
+end
