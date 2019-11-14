@@ -179,7 +179,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  all_players.each { |i|
+  all_players.max_by
   
 end
 
