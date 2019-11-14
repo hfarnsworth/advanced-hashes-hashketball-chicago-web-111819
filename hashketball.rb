@@ -150,7 +150,7 @@ def team_names
 end
 
 def player_numbers(team)
-  team_info(team,:players).player { |i| i[:number] }
+  team_info(team,:players).map { |i| i[:number] }
 end
 
 def player_stats(name)
