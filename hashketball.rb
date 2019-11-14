@@ -206,6 +206,9 @@ def winning_team
 end
 
 def player_with_longest_name
-  player = all_players.max_by { |i| i[:points] }
+  player = all_players.max_by { |i| i[:player_name].length }
   player[:player_name]
 end
+
+def long_name_steals_a_ton?
+  
