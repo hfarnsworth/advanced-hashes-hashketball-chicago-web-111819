@@ -131,7 +131,7 @@ def shoe_size(name)
   search_players_stat_by_name(name,:shoe)
 end
   
-def team_colors
+def team_colors(team)
   
 end
 
@@ -139,15 +139,15 @@ def team_names
   
 end
 
-def player_numbers(name)
+def player_numbers(team)
   search_players_stat_by_name(name,:number)
 end
 
-def player_stats
+def player_stats(name)
   
 end
 
-def big_show_rebounds
+def big_shoe_rebounds
   
 end
 
