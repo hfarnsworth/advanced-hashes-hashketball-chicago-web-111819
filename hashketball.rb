@@ -123,6 +123,11 @@ def search_players_stat_by_name(name,stat_sym)
     
 end
 
+def all_players
+  player_array = []
+  p player_array = game_hash[:away][:players] + game_hash[:home][:players]
+end
+
 def team_info(team,stat)
   game_hash.each { |k,v| 
     if v[:team_name] == team
