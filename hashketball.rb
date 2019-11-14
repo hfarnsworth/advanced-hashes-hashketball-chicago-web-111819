@@ -168,8 +168,9 @@ def player_stats(name)
     else
     end
     }
+  stats.delete(:player_name)
   
-  
+  stats
 end
 
 def big_shoe_rebounds
