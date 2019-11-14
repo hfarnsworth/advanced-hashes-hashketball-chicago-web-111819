@@ -107,17 +107,13 @@ def game_hash
 end
 
 def num_points_scored(name)
-  game_hash.each { |k,v|
-  i = 0 
-  while i < game_hash[k][:players][i] do 
-    if game_hash[k][:players][i][:player_name] == name 
-      return game_hash[k][:players][i][:points]
+  game_hash[:home][:players].each { |i|
+    if i[:player_name] == name 
+      return i[:points]
     else
-      return
     end
-    i += 1
-  end
-  }
+    }
+  
 end
 
 
