@@ -125,7 +125,7 @@ end
 
 def all_players
   player_array = []
-  pp player_array = game_hash[:away][:players] + game_hash[:home][:players]
+  player_array = game_hash[:away][:players] + game_hash[:home][:players]
 end
 
 def team_info(team,stat)
@@ -179,14 +179,19 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  all_players.max_by { |i| i[:shoe] }
+  player = all_players.max_by { |i| i[:shoe] }
+  player[:rebounds]
 end
 
 def most_points_scored
-  
+  player = all_players.max_by { |i| i[:points] }
+  player[:player_name]
 end
 
 def winning_team
-  
+  puts home_total = game_hash[:home][:players].inject { |i,n| n +
+    i[:points] }
+    
+    
 end
 
