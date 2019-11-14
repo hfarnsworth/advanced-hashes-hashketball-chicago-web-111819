@@ -114,6 +114,12 @@ def num_points_scored(name)
     end
     }
   
+  game_hash[:away][:players].each { |i|
+    if i[:player_name] == name
+      return i[points]
+    else
+    end
+    }
 end
 
 
