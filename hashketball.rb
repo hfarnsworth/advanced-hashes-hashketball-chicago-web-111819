@@ -115,7 +115,6 @@ def num_points_scored(name)
     else
       return
     end
-    }
   }
 end
 
