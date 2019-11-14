@@ -127,11 +127,27 @@ def num_points_scored(name)
   search_players_stat_by_name(name,:points)
 end
 
-def
+def shoe_size(name)
+  search_players_stat_by_name(name,:shoe)
+end
+  
+def team_colors
+  
+end
 
+def team_names
+  
+end
 
+def player_numbers(name)
+  search_players_stat_by_name(name,:number)
+end
 
+def player_stats
+  
+end
 
-
-
+def big_show_rebounds
+  
+end
 
