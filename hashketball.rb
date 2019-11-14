@@ -111,7 +111,7 @@ def num_points_scored(name)
   i = 0 
   while i < game_hash[k][:players][i] do 
     if game_hash[k][:players][i][:player_name] == name 
-      p game_hash[k][:players][i][:points]
+      return game_hash[k][:players][i][:points]
     else
       return
     end
