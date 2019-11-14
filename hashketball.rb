@@ -189,7 +189,7 @@ def most_points_scored
 end
 
 def winning_team
-  puts home_total = game_hash[:home][:players].inject { |i,n| n +
+  home_total = game_hash[:home][:players].inject { |i,n| n +
     i[:points] }
     
     
