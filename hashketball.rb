@@ -179,7 +179,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  all_players.
+  all_players
 end
 
 def most_points_scored
