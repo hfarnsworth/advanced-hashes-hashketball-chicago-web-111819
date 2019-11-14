@@ -106,24 +106,25 @@ def game_hash
   }
 end
 
-def check_
-
-
-def num_points_scored(name)
-  
+def search_players_stat_by_name(name,stat_sym)
   game_hash[:home][:players].each { |i|
     if i[:player_name] == name 
-      return i[:points]
+      return i[stat_sym]
     else
     end
     }
   
   game_hash[:away][:players].each { |i|
     if i[:player_name] == name
-      return i[:points]
+      return i[stat_sym]
     else
     end
     }
+    
+end
+
+def num_points_scored(name)
+  search_players_stat_by_name(name,:points)
 end
 
 
