@@ -107,7 +107,7 @@ def game_hash
 end
 
 def num_points_scored(name)
-  pp game_hash.reduce
+  pp game_hash.each { |k,v| v[;players].find { |i| i == name }
 end
 
 
