@@ -136,6 +136,7 @@ def team_colors(team)
 end
 
 def team_names
+  game_hash.map { |k,v| 
   
 end
 
@@ -148,6 +149,14 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
+  
+end
+
+def most_points_scored
+  
+end
+
+def winning_team
   
 end
 
