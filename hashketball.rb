@@ -211,4 +211,7 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
+  player = all_players.max_by { |i| i[:player_name] }
+  player[:player_name]
+end
   
