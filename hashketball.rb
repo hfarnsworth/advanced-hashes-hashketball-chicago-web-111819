@@ -141,7 +141,7 @@ def shoe_size(name)
 end
   
 def team_colors(team)
-  
+  team_info(team,:colors)
 end
 
 def team_names
