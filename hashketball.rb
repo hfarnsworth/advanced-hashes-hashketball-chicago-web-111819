@@ -154,6 +154,20 @@ def player_numbers(team)
 end
 
 def player_stats(name)
+  stats = Hash.new
+  game_hash[:home][:players].each { |i|
+    if i[:player_name] == name 
+      return i
+    else
+    end
+    }
+  
+  game_hash[:away][:players].each { |i|
+    if i[:player_name] == name
+      return i[stat_sym]
+    else
+    end
+  
   
 end
 
