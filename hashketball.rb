@@ -123,6 +123,15 @@ def search_players_stat_by_name(name,stat_sym)
     
 end
 
+def team_info(team,stat)
+  game_hash.each { |k,v| 
+    if v[:team_name] == team
+      return v[stat]
+    else
+    end
+  }
+end
+
 def num_points_scored(name)
   search_players_stat_by_name(name,:points)
 end
