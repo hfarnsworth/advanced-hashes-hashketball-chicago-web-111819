@@ -106,7 +106,11 @@ def game_hash
   }
 end
 
+def check_
+
+
 def num_points_scored(name)
+  
   game_hash[:home][:players].each { |i|
     if i[:player_name] == name 
       return i[:points]
