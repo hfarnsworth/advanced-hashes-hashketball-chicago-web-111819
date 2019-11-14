@@ -195,7 +195,6 @@ def winning_team
   
   game_hash[:away][:players].each { |i|  away_total += i[:points] }
     
-  end
     
 end
 
