@@ -137,7 +137,7 @@ end
 
 def team_names
   game_hash.map { |k,v| 
-  
+  v[:team_name] }
 end
 
 def player_numbers(team)
